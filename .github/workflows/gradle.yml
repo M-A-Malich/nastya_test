@@ -24,7 +24,7 @@ jobs:
       - name: Install SUT
         run: java -jar ./artifacts/app-mbank.jar &
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: chmod +x ./api-ci/rest/gradlew
       - name: Build with Gradle
         run: ./api-ci/rest/gradlew test
 
